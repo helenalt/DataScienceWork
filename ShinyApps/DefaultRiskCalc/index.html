@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quick Default Risk Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Quick Default Risk Calculator">
+  <meta name="author" content="HA">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Quick Default Risk Calculator</h1>
+    <h2>Simple estimation tool for Loan Officers</h2>
+    <p>HA<br/>created for Developing Data Products, Johns Hopkins Data Science Specialization</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Project Objectives</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>Create shinyApp and check into the git repo:
+<a href="https://github.com/helenalt/DataScienceWork/tree/master/ShinyApps/DefaultRiskCalc">https://github.com/helenalt/DataScienceWork/tree/master/ShinyApps/DefaultRiskCalc</a></p></li>
+<li><p>Host a new app at shinyapps.io: 
+<a href="https://helenalt.shinyapps.io/DefaultRiskCalc/">https://helenalt.shinyapps.io/DefaultRiskCalc/</a></p></li>
+<li><p>Create a slidify presentation with info and instructions about the app: This is it!</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Quick Default Risk Calculator</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Imagine:  You are a loan officer of a small institution</p>
+
+<p>Situation: You are approving a new loan, and are looking at application.</p>
+
+<p>Complication: You&#39;re worried about customer&#39;s default risk and would like a quick way to check your intuition</p>
+
+<p>Resolution:  You can now use a very simple Default Risk Calculator and make more informed decisions!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How Does It Work?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This app is a prototype of what can be built out as a robust and autmated system with multiple rich data sets. For now, this is how it works:</p>
+
+<p>You Need:</p>
+
+<ol>
+<li>Customer&#39;s outstanding card balance</li>
+<li>Customer&#39;s annual income</li>
+</ol>
+
+<p>You have both in your application!</p>
+
+<p>You Do:</p>
+
+<ol>
+<li>Enter both numnbers in a Quck Default Risk Calculator</li>
+<li>Hit submit button</li>
+</ol>
+
+<p>You Get:</p>
+
+<p>Customer&#39;s estimated risk level based on a combination of your inputs </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>What&#39;s the secret?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>This app utilizes historical card default data from Default R package/data set.</p></li>
+<li><p>It compares your entered amounts with historical mean values for card balance and income</p></li>
+<li><p>Simple logic works based on the following concepts:</p></li>
+</ol>
+
+<ul>
+<li>Balance smaller, Income larger: Low Risk</li>
+<li>Balance smaller, Income Smaller: Medium Risk</li>
+<li>Balance larger, Income smaller: High Risk</li>
+<li>Balance larger, Income larger: Medium Risk</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>What&#39;s Next?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Of course this is just a start. I&#39;d like to enhance this algorithm in multiple ways in the future:</p>
+
+<ol>
+<li>Include additional inputs and historical data sets, such as state, zip, other accounts, and additional analytics</li>
+<li>Automate data capture and streamline application process</li>
+<li>Create insightful visualizations and what-if analysis tools</li>
+</ol>
+
+<p>But for Now:</p>
+
+<ol>
+<li>Run it: <a href="https://helenalt.shinyapps.io/DefaultRiskCalc/">https://helenalt.shinyapps.io/DefaultRiskCalc/</a></li>
+<li>Use it</li>
+<li>Provide your feedback</li>
+<li>Enjoy the rest of this awesome class!!!</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Project Objectives'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Quick Default Risk Calculator'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How Does It Work?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='What&#39;s the secret?'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='What&#39;s Next?'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
