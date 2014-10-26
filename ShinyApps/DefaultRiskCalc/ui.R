@@ -1,4 +1,4 @@
-runlibrary(shiny)
+library(shiny)
 library(ISLR)
 
 
